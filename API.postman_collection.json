@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "19ac77ad-bcf1-416c-b749-6df5bc4c4993",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Debora Santos\",\n    \"email\": \"debora@gmail.com\",\n    \"cpf\": \"125.558.224-78\",\n    \"telefones\": {\n        \"0\":\"14 99572214\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/agenda",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"agenda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/agenda",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"agenda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Debora Santos alterado\",\n    \"email\": \"debora@gmail.com\",\n    \"cpf\": \"125.558.224-78\",\n    \"telefones\": {\n        \"id\" : 1,\n        \"telefone\":\"14 99572214 000\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/agenda/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"agenda",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nomes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
